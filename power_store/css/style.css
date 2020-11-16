@@ -1,0 +1,1711 @@
+/*  MAIN PAGE CSS
+-----------------------------------------------------------------------------------------------------------
+*/ 
+body {
+    background:#ffffff
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    This removes all margins and padding from this page
+-----------------------------------------------------------------------------------------------------------
+*/
+*{
+    margin:0; padding:0;
+    font-family: Arial, Helvetica, serif;
+}
+
+
+
+
+
+/*  HEADER
+-----------------------------------------------------------------------------------------------------------
+*/  
+#header{
+    background:#C0C0C0;
+    height:110px;
+    width:100%;
+    min-width:511px;
+}
+/*  END HEADER
+-----------------------------------------------------------------------------------------------------------
+*/ 
+
+
+
+
+
+/*  LOGO
+-----------------------------------------------------------------------------------------------------------
+*/  
+#logo{
+    width:18%;
+    height:110px;
+    float:left;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    img here makes CSS target the image in the logo id tag
+-----------------------------------------------------------------------------------------------------------
+*/
+#logo img{
+    width:92%;
+    height:100px;
+    margin-top:5px;
+    margin-left:20px;
+}
+/*  END LOGO
+-----------------------------------------------------------------------------------------------------------
+*/ 
+
+
+
+
+
+/*  LINK
+-----------------------------------------------------------------------------------------------------------
+*/  
+#link{
+    width:80%;
+    height:62px;
+    float:left;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    list-style-type:none;     removes dots from list
+-----------------------------------------------------------------------------------------------------------
+*/
+#link ul{
+    list-style-type:none;
+    margin-right:10px;
+}
+
+
+#link ul li{
+    float:right;
+    margin-left:30px;
+    line-height:30px;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    a here makes CSS target the link href and allow us to remove the underlines and change the color
+    -------------------------------------------------------------------------------------------------------
+    
+    Below are different ways of changing font size
+
+    font-size: 20px;
+    font-size: large;
+    font-size: 150%;
+    -------------------------------------------------------------------------------------------------------
+
+    text-decoration: none;     removes underline from text
+    -------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+*/
+#link ul li a {
+    text-decoration: none;
+    font-size:20px;
+    color: #ffffff;
+    font-weight:bold;
+}
+
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    SIGNUP FORM - USING HOVER MODAL STYLE     display: inline;
+-----------------------------------------------------------------------------------------------------------
+*/
+#link ul li form {
+    width:450px;
+    padding:5px;
+    box-sizing:border-box;
+    display:none;
+    position:absolute;
+    background: #c0c0c0;
+    margin-top:-5px;
+    margin-left:-237px;
+    border:2px solid #000000;
+    border-radius:10px;
+    z-index: 999;
+}
+
+#link ul li form table {
+    width:100%;
+}
+
+#link ul li form table tr td {
+    color: #ffffff; 
+    height:35px;
+}
+
+/*  INPUT BOXES
+-----------------------------------------------------------------------------------------------------------
+*/
+#link ul li form table tr td input {
+    padding-left:5px;
+    border-radius:3px;
+    width:100%;
+    height:30px;
+    outline:none;
+    border:1px solid #000000;
+}
+
+#link ul li form table tr td textarea {
+    padding-left:5px;
+    border-radius:3px;
+    width:100%;
+    height:60px;
+    text-align:left;
+    border-radius:5px;
+    color:#000000;
+    font-weight:bold;
+    outline:none;
+    border:1px solid #000000;
+}
+
+#link ul li form table tr td textarea:hover {
+    background:#F7F7F7;
+}
+
+/*  FORM BUTTONS
+-----------------------------------------------------------------------------------------------------------
+*/
+#link ul li form input {
+    width:65px;
+    height:30px;
+    outline:none;
+    border:1px solid #000000;
+    font-size:15px;
+    text-align:left;
+    border-radius:5px;
+    color:#000000;
+    font-weight:bold;
+}
+
+#link ul li form input:hover {
+    background:#F7F7F7;
+}
+
+#signup_button {
+    width:65px;
+    height:30px;
+    outline:none;
+    border:1px solid #000000;
+    font-size:15px;
+    text-align:center;
+    border-radius:5px;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+#reset_button {
+    width:65px;
+    height:30px;
+    outline:none;
+    border:1px solid #000000;
+    font-size:15px;
+    text-align:center;
+    border-radius:5px;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+#signup_button:hover {
+    color:#ffffff;
+    background:#449944;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#reset_button:hover {
+    color:#ffffff;
+    background:#449944;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#link ul li:hover form{
+    display:block;
+}
+
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    DROPDOWN MENU
+-----------------------------------------------------------------------------------------------------------
+*/
+#link ul li ul {
+    display:none;
+    border-radius:10px;
+    background:#449944;
+    border:2px solid #000000;
+}
+
+#link ul li ul li {
+    width:100%;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    INSIDE DROPDOWN
+-----------------------------------------------------------------------------------------------------------
+*/
+#link ul li ul li a {
+    display:block;
+    padding-left:5%;
+    box-sizing:border-box;
+    font-size:20px;
+}
+
+#link ul li:hover ul {
+    margin-left:-50px;
+    background: #C0C0C0;
+    display:block;
+    width:30%;
+    position:absolute;
+    z-index:1000;
+}
+
+#link ul li ul li:hover {
+    background:#449944;
+}
+
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    SIGNUP FORM - USING HOVER MODAL STYLE     display: inline;
+-----------------------------------------------------------------------------------------------------------
+*/
+ #login_button {
+    width:65px;
+    height:30px;
+    outline:none;
+    border:1px solid #000000;
+    font-size:15px;
+    text-align:center;
+    border-radius:5px;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+#login_button:hover {
+    color:#ffffff;
+    background:#449944;
+    font-weight:bold;
+    cursor:pointer;
+}  
+
+#forgot_password_button {
+    width:65px;
+    height:30px;
+    outline:none;
+    border:1px solid #000000;
+    font-size:15px;
+    text-align:center;
+    border-radius:5px;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+#forgot_password_button:hover {
+    color:#ffffff;
+    background:#449944;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+
+
+/*  END LINK
+-----------------------------------------------------------------------------------------------------------
+*/ 
+
+
+
+
+
+/*  SEARCH
+-----------------------------------------------------------------------------------------------------------
+*/ 
+#search{
+    padding-left:30%; 
+}
+
+
+#search form input {
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-width:0px;
+    width:76.5%;
+    height:33px;
+    padding-left:2%;
+    outline:none;
+}
+
+
+#search_btn {
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    margin-left:-10px;
+    min-width:10%; 
+    height:35px;
+    background:#449944;
+    color:ffffff;
+    font-size:15px;
+    font-weight:bold;
+    border-width:0px;
+    cursor:pointer;
+}
+/*  END SEARCH
+-----------------------------------------------------------------------------------------------------------
+*/ 
+
+
+
+
+
+/*  CART
+-----------------------------------------------------------------------------------------------------------
+*/ 
+#cart_btn {
+    border-radius:5px;
+    min-width:12%; 
+    height:35px;
+    background: #449944;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:bold;
+    border-width:0px;
+}
+
+/*  NEEDED BECAUSE ADDING <a> TAG TO BUTTON CAUSES TEXT TO TURN DARK
+-----------------------------------------------------------------------------------------------------------
+*/ 
+#cart_btn a {
+    text-decoration:none;
+    color:#ffffff;
+    display:block;
+    cursor:pointer;
+}
+
+#cart_btn:hover a {
+    display:block;
+}
+
+/*  padding:1%;   AND   box-sizing:border-box;   ELIMINATE SCROLL LINE AT BOTTOM OF SCREEN
+-----------------------------------------------------------------------------------------------------------
+*/ 
+.cart {
+    width:100%;
+    min-height:727px;
+    padding:1%;
+    box-sizing:border-box;
+    background:#ffffff;
+}
+
+#buy_now {
+    width:150px;
+    height:35px;
+    background:#ffffff;
+    font-size:14px;
+    border:1px solid #000000;
+    margin-right:0.2%;
+    border-radius:5px;
+}
+
+#buy_now:hover {
+    width:150px;
+    height:35px;
+    background:#449944;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+/*  OUT OF STOCK BUTTON
+-----------------------------------------------------------------------------------------------------------
+*/ 
+#out_of_stock {
+    width:150px;
+    height:35px;
+    background:#ffffff;
+    font-size:14px;
+    border:1px solid #000000;
+    margin-right:0.2%;
+    border-radius:5px;
+}
+
+#out_of_stock:hover {
+    width:150px;
+    height:35px;
+    background:#EB1306;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/*  END BUY NOW CART
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+/*  BUY NOW CART
+-----------------------------------------------------------------------------------------------------------
+*/ 
+#buy_now_cart {
+    min-height:620px;
+}
+
+.buy_now_cart {
+    width:100%;
+    padding:1%;
+    box-sizing:border-box;
+    background:#ffffff;
+}
+
+.buy_now_cart form table {
+    width:100%;
+}
+
+.buy_now_cart form table tr th {
+    height:40px;
+    background:#e5e5e5;
+    color:#7a7a7a;
+    text-align:left;
+    padding-left:1%;
+    font-size:14px;
+}
+
+.buy_now_cart form table tr td {
+    height:60px;
+    padding-left:1.2%;
+    font-size:14px;
+}
+
+.buy_now_cart form table tr td img {
+    width:60px;
+    height:60px;
+}
+
+.buy_now_cart form table tr td input[type=text] {
+    min-width:19%;
+    max-width:12%;
+    height:30px;
+    padding-left:1%;
+}
+
+.buy_now_cart form table tr td input[type=submit] {
+    min-width:12%;
+    height:30px;
+    background:#ffffff;
+    color:#000000;
+}
+
+.buy_now_cart form table tr td input[type=submit]:hover {
+    background:#7a7a7a;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.buy_now {
+    width:150px;
+    height:35px;
+    color:#000000;
+    font-size:14px;
+    background:#ffffff;
+    border:1px solid #000000;
+    margin-right:0.2%;
+    border-radius:5px;
+}
+
+.buy_now:hover {
+    width:150px;
+    height:35px;
+    background:#449944;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+/*  END BUY NOW CART
+-----------------------------------------------------------------------------------------------------------
+*/
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    Had to be styles after being given an <a> tag
+-----------------------------------------------------------------------------------------------------------
+*/
+#buy_nowa {
+    text-decoration:none;
+    color:#ffffff;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    Had to be styles after being given an <a> tag
+-----------------------------------------------------------------------------------------------------------
+*/
+#cart_delete {
+    text-decoration:none;
+    color:#000000;
+}
+
+#cart_empty_button_a_tag {
+    text-decoration:none;
+    color:#ffffff;
+    display: block;
+}
+
+#cart_empty_button {
+    margin-top:15px;
+    text-decoration:none;
+    width:140px;
+    height:35px;
+    background:#449944;
+    border:1px solid #ffffff;
+    border-radius:5px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+#cart_empty_button:hover {
+    border:1px solid #000000;
+    font-size:15px;
+    font-weight:bold;
+    display: block;
+}
+
+
+#cart {
+    width:150px;
+    height:35px;
+    background:#ffffff;
+    font-size:14px;
+    border:1px solid #000000;
+    border-radius:5px;
+}
+
+#cart:hover {
+    width:150px;
+    height:35px;
+    background:#449944;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+
+
+
+/*  CLASS CART
+-----------------------------------------------------------------------------------------------------------
+*/ 
+
+.cart form table {
+    width:100%;
+}
+
+.cart form table tr th {
+    height:40px;
+    background:#e5e5e5;
+    color:#7a7a7a;
+    text-align:left;
+    padding-left:1%;
+    font-size:14px;
+}
+
+.cart form table tr td {
+    height:60px;
+    padding-left:1.2%;
+    font-size:14px;
+}
+
+.cart form table tr td img {
+    width:60px;
+    height:60px;
+}
+
+.cart form table tr td input[type=text] {
+    min-width:19%;
+    max-width:12%;
+    height:30px;
+    padding-left:1%;
+}
+
+.cart form table tr td input[type=submit] {
+    min-width:12%;
+    height:30px;
+    background:#ffffff;
+    color:#000000;
+}
+
+.cart form table tr td input[type=submit]:hover {
+    background:#7a7a7a;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+/*  END CART
+-----------------------------------------------------------------------------------------------------------
+*/ 
+
+
+
+
+
+/*  NAVBAR
+-----------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------
+    overflow:hidden;     can be used to stop button overflow but we lose the bottom white border so instead
+    height:2px;          is used in the     #navbar ul li:hover     to achieve the same effect
+    -------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+*/
+#navbar  {
+    width:100%;
+    min-width:511px;
+    height:50px;
+    background:#449944;
+    border-top:1px solid #449944;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    list-style-type:none;     removes dots from list
+-----------------------------------------------------------------------------------------------------------
+*/
+#navbar ul {
+
+    height:3px;
+    list-style-type:none;
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    *** This setting if put below 1.9% makes slider move out of place ***
+-----------------------------------------------------------------------------------------------------------
+*/
+    margin-left:1.9%;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    float:left;     forces horizontal arrangment of links in navbar
+-----------------------------------------------------------------------------------------------------------
+    padding-left:1%;
+    padding-right:1%;
+    padding-top:8px;
+    padding-bottom:8px;
+*/
+#navbar ul li{
+    padding-left:0.75%;
+    padding-right:0.75%;
+    padding-top:0.75%;
+    padding-bottom:0.75%;
+    text-align:center;
+    float:left;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    text-decoration: none;     removes underline from text
+-----------------------------------------------------------------------------------------------------------
+*/
+#navbar ul li a {
+    text-decoration: none;
+    color:#ffffff;
+    font-size:18px;
+    line-height:18px;
+}
+
+#navbar ul li:hover {
+    background:#C0C0C0;
+    border-left:1px solid #ffffff;
+    border-right:1px solid #ffffff;
+    border-top:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+}
+
+
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    Dropdown Menu with some CSS above this line changed to support
+-----------------------------------------------------------------------------------------------------------
+*/
+#navbar li {
+    background:#449944;
+}
+
+#navbar li ul {
+    display:none !important;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    position:relative     needed to stop other elements being thrown around
+-----------------------------------------------------------------------------------------------------------
+*/
+#navbar li:hover ul {
+    display:block !important; 
+    box-shadow: 70px 170px 70px 120px  #202e1d;
+    padding-left:0%; 
+    margin-left:-20px;
+    margin-top:5px;
+    background:#449944;
+    width:200px; 
+    height:35px;
+    line-height:35px;
+    z-index:999;
+    position:absolute;
+}
+
+#navbar li ul li {
+    float:none; 
+    text-align:left;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    This makes the entire block clickable not just the text
+-----------------------------------------------------------------------------------------------------------
+*/
+#navbar li ul li a{
+    display:block;
+    width:200px; 
+    height:35px;
+    line-height:35px;
+}
+/*  END NAVBAR
+-----------------------------------------------------------------------------------------------------------
+*/ 
+
+
+
+
+
+/*  BODY LEFT
+
+-----------------------------------------------------------------------------------------------------------
+*/ 
+#bodyleft {
+    box-sizing:border-box; 
+    border-radius:3px;
+    width:73%;
+    background:#ffffff;
+    margin:1% 1% 1% 1.3%;
+    float:left;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------
+    <h2> tags     used to create styled border over body left sale item slider here
+    -------------------------------------------------------------------------------------------------------
+    line-height:40px;     and     height:40px;     arrangement here keeps the text in the border centered
+    -------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+*/
+#bodyleft h2 {
+    text-shadow:5px 5px 5px #000000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    line-height:40px;
+    background:#C0C0C0;
+    height:40px;
+    text-align:center;
+    color:#ffffff;
+}
+
+#bodyleft ul {
+    min-width:100%;
+    max-width:100%;
+    list-style-type:none;
+    padding-bottom: 80px;
+}
+
+#bodyleft ul li {
+    min-width:28%;
+    max-width:28%;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:3.6%;
+    float:left;
+    width:31%;
+    min-height:410px;
+    border:3px solid #C0C0C0;
+}
+
+#bodyleft ul li a{
+    text-decoration:none;
+    color:#000000;
+    display:block;
+}
+
+#bodyleft ul li a h4{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    margin-top:10px;
+    text-align:center;
+    font-size:16px;
+}
+
+#bodyleft ul li a img {
+    width:100%;
+    height:310px;
+    margin-bottom:15px;
+}
+
+#product_button {
+    min-width:15%;
+    height:30px;
+    background:#ffffff;
+    border-radius:3px;
+    border:1px solid #000000;
+}
+
+#product_button:hover {
+    background:#449944;
+}
+
+/*  This makes the button have stripes
+-----------------------------------------------------------------------------------------------------------
+
+#product_button:hover a {
+    background:#ffffff;
+}
+*/
+
+#bodyleft h3 {
+    text-shadow:5px 5px 5px #000000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background:#C0C0C0;
+    color:#ffffff;
+    padding-left:5%;
+    height:40px;
+    line-height:40px;
+}
+/*  END BODY LEFT
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  BODY RIGHT
+-----------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------
+    margin:1% 1% 1% 0%     This is a clockwise margin starting at the top
+    -------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+*/
+#bodyright {
+    height:540px;
+    border-radius:3px;
+    width:23%;
+    background:#ffffff;
+    margin:1% 1% 1% 0.5%;
+    float:left;
+}
+
+#bodyright h3 {
+    text-shadow:5px 5px 5px #000000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    line-height:40px;
+    background:#C0C0C0;
+    height:40px;
+    text-align:left;
+    padding-left:15%;
+    color:#ffffff;
+}
+
+.bodyright {
+    float:left;
+}
+
+.bodyright ul {
+
+    list-style-type:none;
+}
+
+.bodyright ul li{
+    width:100%;
+    height:35px;
+    line-height:35px;
+    padding-left:15%;
+}
+
+.bodyright ul li a{
+    text-decoration:none;
+    color:#000000;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.bodyright ul li:hover{
+    text-decoration:underline;
+    color:#000000;
+}
+
+
+
+/*  GREAT DEALS
+-----------------------------------------------------------------------------------------------------------
+*/
+#great_deals{
+    width:100%;
+    height:500px;
+}
+/*  END BODY RIGHT
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+/*  SLIDER
+-----------------------------------------------------------------------------------------------------------
+*/
+#slider {
+    width:100%;
+    height:500px;
+    margin-bottom:70px;
+}
+
+#slider img {
+    width:100%;
+    height:500px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+/*  END SLIDER
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  PRODUCT DETAIL PAGE
+-----------------------------------------------------------------------------------------------------------
+*/ 
+#product_image {
+    float:left;
+    width:30%;
+    height:570px;
+    background:#ffffff;
+    padding:1%;
+    box-sizing:border-box;
+}
+
+#product_image img {
+    width:100%;
+    height:460px;
+}
+
+#product_image ul {
+    list-style-type:none;
+}
+
+#product_image ul li {
+    float:left;
+    margin-left:10px;  
+}
+
+#product_image ul li img {
+    width:80px;
+    height:80px;
+    margin-top:10px
+}
+
+#product_features {
+    float:left;
+    width:70%;
+    height:660px;
+    background:#ffffff
+}
+
+#product_features h3 {
+    margin-top:10px;
+    text-align:center;
+    height:35px;
+    border-bottom:1px solid #C0C0C0;
+}
+
+#product_features ul {
+    float:left;
+    width:25%;
+    margin:3% 0px 0px 20%;
+    color:#ff0000;
+}
+
+#product_features ul li {
+    height:18%;
+    color:#000000;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#product_features h4 {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:20px;
+    color:#ff0000;
+    text-decoration:line-through;
+}
+
+#keystroke {
+    font-size:16px;
+    font-weight:bold;
+    margin-left:2.3%;
+    margin-top:16px;
+    float:left;
+    width:30%;
+}
+
+#share {
+    width:100%;
+    padding:1%;
+    box-sizing:border-box;
+}
+
+#share div {
+    line-height:35px;
+    width:23%;
+    height:35px;
+    margin-left:1.5%;
+    float:left;
+}
+
+#share div a {
+    text-decoration:none;
+    color:#ffffff;
+}
+
+#share div:hover a {
+    display:block;
+}
+
+#facebook {
+    background:#3b5998;
+    border-radius:5px;
+}
+
+#google_plus {
+    background:#D34836;
+    border-radius:5px;
+}
+
+#twitter {
+    background:#4099FF;
+    border-radius:5px;
+}
+
+#whatsapp {
+    background:#34AF23;   
+    border-radius:5px;
+}
+
+#button_div {
+    /*  This was causing a problem in page
+        margin-left:40%;
+    */
+     margin-bottom:18px;
+}
+/*  END PRODUCT DETAIL PAGE
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  SIMILAR PRODUCT
+-----------------------------------------------------------------------------------------------------------
+*/
+#similar_product {
+    width:100%;
+    height:350px;
+    background:#ffffff;
+    margin-top:242px;
+    margin-bottom:240px;
+}
+
+#similar_product h3 {
+    background:#449944;
+    color:#ffffff;
+    height:40px;
+    line-height:40px;
+    padding-left:1%;
+}
+
+#similar_product ul {
+    list-style-type:none;
+}
+
+#similar_product ul li {
+    float:left;
+    margin-top:15px;
+    margin-left:3.5%;
+    margin-right:3.5%;
+
+/*  This stops product moving when you hover over it - must have border:1px solid #C0C0C0; below it
+-----------------------------------------------------------------------------------------------------------
+*/
+    border:1px solid #ffffff;
+}
+
+#similar_product ul li:hover {
+    border:1px solid #C0C0C0;
+    border-radius:3px;
+}
+
+#similar_product ul li a img {
+    width:180px;
+    height:250px;
+}
+
+#similar_product ul li a {
+    text-decoration:none;
+    color:#000000;
+}
+
+#similar_product ul li a p {
+    text-align:center;
+    font-size:15px;
+    font-weight:bold;
+}
+/*  END PRODUCT SIMILAR PRODUCT
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  SPACER CATEGORY DETAIL
+-----------------------------------------------------------------------------------------------------------
+*/
+#spacer_cart {
+    position:relative;
+    width:100%;
+    height:583px;
+    background:transparent;
+    clear:both;
+}
+
+/*  END SPACER CATEGORY DETAIL
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  SPACER CATEGORY DETAIL
+-----------------------------------------------------------------------------------------------------------
+*/
+#spacer_category_detail {
+    position:relative;
+    width:100%;
+    height:785px;
+    background:transparent;
+    clear:both;
+}
+
+/*  END SPACER CATEGORY DETAIL
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  SPACER PRODUCT DETAIL
+-----------------------------------------------------------------------------------------------------------
+*/
+#spacer_product_detail {
+    position:relative;
+    width:100%;
+    height:1150px;
+    background:transparent;
+    clear:both;
+}
+
+/*  END SPACER PRODUCT DETAIL
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  SPACER USER PRODUCT
+-----------------------------------------------------------------------------------------------------------
+*/
+#spacer_user_product {
+    position:relative;
+    width:100%;
+    height:785px;
+    background:transparent;
+    clear:both;
+}
+
+/*  END SPACER SEARCH
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  SPACER SEARCH
+-----------------------------------------------------------------------------------------------------------
+*/
+#spacer_search {
+    position:relative;
+    width:100%;
+    height:785px;
+    background:transparent;
+    clear:both;
+}
+
+/*  END SPACER SEARCH
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  USER LEFT
+-----------------------------------------------------------------------------------------------------------
+*/
+#user_left {
+    margin: 1% 1% 1% 1%;
+    width:65%;
+    height:800px;
+    background:#ffffff;
+    float:left;
+}
+
+#user_left h3 {
+    text-shadow:5px 5px 5px #000000;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    line-height:40px;
+    background:#C0C0C0;
+    height:40px;
+    text-align:left;
+    padding-left:15%;
+    color:#ffffff; 
+}
+
+#user_left form table {
+    width:98%;
+    margin:2%;
+}
+
+#user_left form table tr td {
+    width:50%;
+    height:40px;
+}
+
+#user_left form table tr td input {
+    width:98%;
+    height:35px;
+    outline:none;
+    padding-left:2%;
+    box-sizing:border-box;
+}
+
+#user_left form table tr td input [type=file]{
+    width:98%;
+    height:35px;
+    outline:none;
+    padding-left:2%;
+    box-sizing:border-box;
+}
+
+#user_product_button_left {
+    min-width:15%;
+    height:30px;
+    background:#ffffff;
+    border-radius:5px;
+    border:1px solid #000000;
+}
+
+#user_product_button_left:hover {
+    cursor:pointer;
+    transition:all 0.2s;
+    background:#449944;
+    color:#ffffff;
+}
+
+
+
+
+
+.myorder {
+    width:106% !important; 
+    overflow-x:scroll; 
+    padding:1%; 
+    box-sizing:border-box; 
+    background:#fff; 
+    height:780px;
+}
+
+.myorder table {
+    width:90% !important
+}
+
+.myorder table tr th {
+    height:40px;
+    background:#e5e5e5;
+    color:#7a7a7a;
+    text-align:left;
+    padding-left:1%;
+    font-size:14px;
+}
+
+.myorder table tr td {
+    font-size:14px;
+    height:60px;
+    width:10% !important;
+    padding-left:1.2%;
+    font-size:14px;
+}
+
+.myorder table img {
+    width:60px;
+    height:60px;
+}
+
+.myorder table tr td input[type=text] {
+    margin-left:2px;
+    min-width:98%;
+    max-width:98%;
+    height:30px;
+    padding-left:1%;
+}
+
+.myorder table tr td input[type=submit] {
+    margin-left:2px;
+    min-width:12%;
+    height:30px;
+    background:#ffffff;
+    color:#000000;
+}
+
+.myorder table tr td input[type=submit]:hover {
+    margin-left:2px;
+    background:#7a7a7a;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.myorder_cancel  {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+.mycart {
+    width:100% !important; 
+    overflow-x:scroll; 
+    padding:1%; 
+    box-sizing:border-box; 
+    background:#fff; 
+    height:780px;
+}
+
+.mycart table {
+    width:90% !important
+}
+
+.mycart table tr th {
+    height:40px;
+    background:#e5e5e5;
+    color:#7a7a7a;
+    text-align:left;
+    padding-left:1%;
+    font-size:14px;
+}
+
+.mycart table tr td {
+    height:60px;
+    padding-left:1.2%;
+    font-size:14px;
+}
+
+.mycart table img {
+    width:60px;
+    height:60px;
+}
+
+.mycart table tr td input[type=text] {
+    margin-left:2px;
+    min-width:98%;
+    max-width:98%;
+    height:30px;
+    padding-left:1%;
+}
+
+.mycart table tr td input[type=submit] {
+    margin-left:2px;
+    min-width:12%;
+    height:30px;
+    background:#ffffff;
+    color:#000000;
+}
+
+.mycart table tr td input[type=submit]:hover {
+    margin-left:2px;
+    background:#7a7a7a;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.my_cart_net_width {
+    min-width:100px;
+}
+
+
+
+/*  END USER LEFT
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+/*  USER RIGHT
+-----------------------------------------------------------------------------------------------------------
+*/
+#user_right {
+    margin: 1% 1% 1% 0%;
+    width:32%;
+    height:800px;
+    background:#ffffff;
+    float:right;
+}
+
+#user_right h3 {
+    text-shadow:5px 5px 5px #000000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    line-height:40px;
+    background:#C0C0C0;
+    height:40px;
+    text-align:left;
+    padding-left:15%;
+    color:#ffffff;
+}
+
+#user_right img {
+    margin:3%;
+    width:94%;
+    height:500px;
+}
+
+#user_right ul {
+    list-style-type:none;
+}
+
+#user_right ul li {
+    width:100%;
+    padding-left:5%;
+    padding-top:5%;
+    box-sizing:border-box;
+    height:35px;
+    line-height:35px;
+}
+
+#user_right ul li a{
+    text-decoration:none;
+    color:#000000;
+    font-weight:bold;
+}
+
+/*  END USER RIGHT
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  CHECKOUT
+-----------------------------------------------------------------------------------------------------------
+*/
+#checkout_user {
+    padding:2%;
+    box-sizing:border-box;
+    width:100%;
+}
+
+#checkout_user h2 {
+    width:100%;
+    height:40px;
+    font-size:20px;
+    line-height:40px;
+    padding-left:2%;
+    box-sizing:border-box;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:5px;
+    color:#ffffff;
+    background:#C0C0C0;
+}
+
+
+#checkout_user_left {
+    width:20%; 
+    padding:1%; 
+    box-sizing:border-box;
+    border:2px solid #000000;
+    border-radius:5px; 
+    float:left; 
+    margin-bottom:10px !important;
+}
+
+#checkout_user_left h3 {
+    font-weight:normal;
+    color:#000000;
+    margin-bottom:10px;
+}
+
+#checkout_user_left p {
+    font-weight:normal;
+    color:#000000;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+#checkout_user_right {
+    margin-left:2%;
+    width:78%; 
+    padding:1%; 
+    box-sizing:border-box;
+    border:2px solid #000000;
+    border-radius:5px; 
+    float:right; 
+    margin-bottom:10px !important;
+}
+
+
+#checkout_user_right form table {
+    width:100%;
+}
+
+#checkout_user_right form table tr td {
+    width:50%;
+    height:30px;
+    font-size:20px;
+}
+
+#checkout_user_right form table tr td input {
+    width:100%;
+    height:30px;
+    outline:none;
+    border-radius:5px;
+    padding-left:2%;
+    box-sizing:border-box;
+}
+
+#checkout_user_right form table tr td input:hover {
+    border:2px solid #565656;
+}
+
+#checkout_user_right_button {
+    margin-top:27px;
+    min-width:15%;
+    height:30px;
+    background:#ffffff;
+    border-radius:5px;
+    border:1px solid #000000;
+}
+
+#checkout_user_right_button:hover {
+    margin-top:27px;
+    cursor:pointer;
+    transition:all 0.2s;
+    background:#449944;
+    color:#ffffff;
+}
+
+/*  END CHECKOUT
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*  WISHLIST
+-----------------------------------------------------------------------------------------------------------
+*/
+#up_user_password {
+    min-width:15%;
+    height:30px;
+    background:#ffffff;
+    border-radius:5px;
+    border:1px solid #000000;
+}
+
+#up_user_password:hover {
+    cursor:pointer;
+    transition:all 0.2s;
+    background:#449944;
+    color:#ffffff;
+}
+/*  END WISHLIST
+-----------------------------------------------------------------------------------------------------------
+*/
+
+
+
+/*  Footer
+-----------------------------------------------------------------------------------------------------------
+*/
+#footer {
+    position:relative;
+    width:100%;
+    min-width:511px;
+    height:35px;
+    background:#C0C0C0;
+    clear:both;
+}
+
+#footer h4 {
+    text-align:center;
+    color:#ffffff;
+    line-height:35px;
+
+}
+/*  END FOOTER
+-----------------------------------------------------------------------------------------------------------
+*/
